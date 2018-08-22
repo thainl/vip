@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>search</title>
+	<link rel="stylesheet" href="css/cssreset.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/iconfont-search.css">
+</head>
+<body>
+	<header>
+        <!-- 顶部菜单栏 -->
+        <div class="top-menu-bar">
+            <div class="top-menu">
+            <div class="address" id="addr" title="">
+                <h3 class="city">广州市</h3>
+                <span class="addr"></span>
+                <i class="white-bar"></i>
+                <div class="seleaddr">
+                    <p>请选择你所在的收货地区</p>
+                    <b class="del iconfont icon-close"></b>
+                    <div class="tab">
+                        <ul class="tab-opin">
+                            <li>省份</li>
+                            <li class="curr">城市</li>
+                        </ul>
+                        <i class="white-bar-addr"></i>
+                        <i class="white-bar-addr2"></i>
+                        <section class="choice">
+                            <div>
+                                <ul class="province-ul">
+                                    <li><a href="">北京市</a></li>
+                                    <li><a href="">天津市</a></li>
+                                    <li><a href="">河北省</a></li>
+                                    <li><a href="">山西省</a></li>
+                                    <li><a href="">内蒙古自治区</a></li>
+                                    <li><a href="">辽宁省</a></li>
+                                    <li><a href="">吉林省</a></li>
+                                    <li><a href="">黑龙江省</a></li>
+                                    <li><a href="">上海市</a></li>
+                                    <li><a href="">江苏省</a></li>
+                                    <li><a href="">浙江省</a></li>
+                                    <li><a href="">安徽省</a></li>
+                                    <li><a href="">福建省</a></li>
+                                    <li><a href="">江西省</a></li>
+                                    <li><a href="">山东省</a></li>
+                                    <li><a href="">河南省</a></li>
+                                    <li><a href="">湖北省</a></li>
+                                    <li><a href="">湖南省</a></li>
+                                    <li><a href=""  class="selected">广东省</a></li>
+                                    <li><a href="">广西壮族自治区</a></li>
+                                    <li><a href="">海南省</a></li>
+                                    <li><a href="">重庆市</a></li>
+                                    <li><a href="">四川省</a></li>
+                                    <li><a href="">贵州省</a></li>
+                                    <li><a href="">云南省</a></li>
+                                    <li><a href="">西藏自治区</a></li>
+                                    <li><a href="">陕西省</a></li>
+                                    <li><a href="">甘肃省</a></li>
+                                    <li><a href="">青海省</a></li>
+                                    <li><a href="">宁夏回族自治区</a></li>
+                                    <li><a href="">新疆维吾尔自治区</a></li>
+                                </ul>
+                            </div>
+                            <div class="curr">
+                                <ul class="cities-ul">
+                                    <li><a href="" class="selected">广州市</a></li>
+                                    <li><a href="">韶关市</a></li>
+                                    <li><a href="">深圳市</a></li>
+                                    <li><a href="">珠海市</a></li>
+                                    <li><a href="">汕头市</a></li>
+                                    <li><a href="">佛山市</a></li>
+                                    <li><a href="">江门市</a></li>
+                                    <li><a href="">湛江市</a></li>
+                                    <li><a href="">茂名市</a></li>
+                                    <li><a href="">肇庆市</a></li>
+                                    <li><a href="">惠州市</a></li>
+                                    <li><a href="">梅州市</a></li>
+                                    <li><a href="">汕尾市</a></li>
+                                    <li><a href="">河源市</a></li>
+                                    <li><a href="">阳江市</a></li>
+                                    <li><a href="">清远市</a></li>
+                                    <li><a href="">东莞市</a></li>
+                                    <li><a href="">中山市</a></li>
+                                    <li><a href="">潮州市</a></li>
+                                    <li><a href="">揭阳市</a></li>
+                                    <li><a href="">云浮市</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+            <ul id="menu">
+                <li class="liuser">
+                    <div class="user-in" id="user">
+                        <a href="#">请登录</a>
+                    </div>
+                    <i></i>
+                    <div class="login">
+                        <span class="icon-hello"></span>
+                        <p class="loginpls">
+                            <a href="">您好！[请登录]</a>
+                        </p>
+                        <div class="login-link-list-left">
+                            <span>
+                                <a href="">我的收藏</a>
+                            </span>
+                            <span>
+                                <a href="">零钱</a>
+                            </span>
+                            <span>
+                                <a href="">我的唯品币</a>
+                            </span>
+                        </div>
+                        <div class="login-link-list-right">
+                            <span>
+                                <a href="">我的订单</a>
+                            </span>
+                            <span>
+                                <a href="">我的优惠卷</a>
+                            </span>
+                            <span>
+                                <a href="">唯品金融</a>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="liregister">
+                    <div class="regt-in">
+                        <a href="#">注册</a>
+                    </div>
+                    <i></i>
+                </li>
+                <li class="lisign">
+                    <div class="sign-in">
+                        <u class="sign-gif"></u><a href="#">签到有礼</a>
+                    </div>
+                    <i></i>
+                    <b class="arrow-out"></b>
+                    <b class="arrow"></b>
+                    <div class="sign">
+                        <span class="timeline">
+                            <span class="sign-day day1">1天</span>
+                            <span class="sign-day day2">2天</span>
+                            <span class="sign-day day3">3天</span>
+                            <span class="sign-day day4">4天</span>
+                            <span class="sign-day day5">5天</span>
+                            <span class="sign-day day6">6天</span>
+                            <span class="sign-day day7">7天</span>
+                        </span>
+                        <div class="sign-bottom">
+                            <p class="sign-bottom-link"><a href="">每天签到送惊喜， 连续签到更享心动奖励</a></p>
+                            <a href="" class="sign-button">签到</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="liorder">
+                    <div class="order-in">
+                        <a href="#">我的订单</a>
+                    </div>
+                    <i></i>
+                </li>
+                <li class="lispe">
+                    <div class="spe-in">
+                        <a href="#">我的特卖</a><em class=""></em>
+                    </div>
+                    <i></i>
+                    <div class="myspe">
+                        <span><a href="">品牌收藏</a></span>
+                        <span><a href="">商品收藏</a></span>
+                        <span><a href="">我的足迹</a></span>
+                    </div>
+                </li>
+                <li class="livip">
+                    <div class="vip-in">
+                        <a href="#">会员俱乐部</a><em></em>
+                    </div>
+                    <i></i>
+                    <div class="vip">
+                        <span><a href="">俱乐部首页</a></span>
+                        <span><a href="">唯品币兑换</a></span>
+                        <span><a href="">免费抽大奖</a></span>
+                    </div>
+                </li>
+                <li class="liserver">
+                    <div class="server-in">
+                        <a href="#">客户服务</a><em></em>
+                    </div>
+                    <i></i>
+                    <div class="server">
+                        <span><a href="">联系客服</a></span>
+                        <span><a href="">帮助中心</a></span>
+                        <span><a href="">服务中心</a></span>
+                        <span><a href="">知识产权投诉</a></span>
+                    </div>
+                </li>
+                <li class="limob">
+                    <div class="mob-in">
+                        <u class="phone-icon"></u><a href="#">手机版</a>
+                    </div>
+                    <i></i>
+                    <div class="mobile">
+                        <div>
+                            <img src="img/qr-code.jpg" alt="" width="161px">
+                        </div>
+                        <p><a href="">随时逛 及时抢</a></p>
+                    </div>
+                </li>
+                <li class="limore">
+                    <div class="more-in">
+                        <a href="#">更多</a><em></em>
+                    </div>
+                    <div class="more">
+                        <div>
+                            <p>合作专区</p>
+                            <span><a href="">联名卡申请</a></span>
+                            <span><a href="">唯品卡</a></span>
+                            <span><a href="">支付专区</a></span>
+                        </div>
+                        <div>
+                            <p>关于我们</p>
+                            <span><a href="">Sell on vip</a></span>
+                            <span><a href="">品牌招商</a></span>
+                            <span><a href="">官方博客</a></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- 顶部logo栏 -->
+        <div class="top-main">
+            <div class="top-logo">
+                <a href="index.html"><img src="img/vip-logo.gif" height="100px" alt=""></a>
+            </div>
+            <a class="logo2-link" href="#" title=""></a>
+            <a class="logo2-link" href="#"></a>
+            <a class="logo2-link" href="#"></a>
+            <img class="logo2" src="img/top-main.png" alt="" height="100px">
+            <div class="shopping-bag">
+                <div class="wrap-bag">
+                    <span class="icon-shopping-bag"></span>
+                    购物袋
+                    <span class="shopping-bag-count">0</span>
+                </div>
+                <div class="shopping-bag-detail">
+                    <div class="shopping-bag-content">
+                        <p>好像还未登录！<a href="">马上登录</a> 查看购物袋吧</p>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <input class="top-search" type="text" placeholder="大家都在搜：连衣裙" max-length="100" value="连衣裙">
+                <a class="search-button" href=""><span class="icon-search"></span></a>
+                <div class="search-more">
+                    <div class="search-history">
+                        <p>搜索历史</p>
+                    </div>
+                    <div class="search-recommend">
+                        <p>精选推荐</p>
+                        <ul>
+                            <li><a href="">面膜</a></li>
+                            <li><a href="">护肤</a></li>
+                            <li><a href="">文胸</a></li>
+                            <li><a href="">口号</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导航栏 -->
+        <nav>
+            <div class="top-nav">
+                <ul class="top-nav-left">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="">女装</a></li>
+                    <li><a href="">母婴</a></li>
+                    <li><a href="">美妆</a></li>
+                    <li><a href="">国际</a></li>
+                    <li><a href="">男装</a></li>
+                    <li><a href="">居家</a></li>
+                    <li><a href="">鞋包</a></li>
+                    <li><a href="">运动</a></li>
+                    <li><a href="">生活</a></li>
+                    <li class="li-nav-more">
+                    <a href="" class="top-nav-more">更多</a>
+                    <em class="nav-more"></em>
+                    <div class="top-nav-more-extend">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="img/more1.jpg" width="170px" alt="">
+                                    <div class="more-shadow">
+                                        <p>配饰</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/more2.jpg" width="170px" alt="">
+                                    <div class="more-shadow">
+                                        <p>唯品·奢</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/more3.jpg" width="170px" alt="">
+                                    <div class="more-shadow">
+                                        <p>金融</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/more4.png" width="170px" alt="">
+                                    <div class="more-shadow">
+                                        <p>电商扶贫</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+                <ul class="top-nav-right">
+                    <li>
+                        <a  class="curr" href=""><img src="img/navsort.png" alt="">分类</a>
+                        <i class="nav-right-bar"></i>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/comingsoon.png" alt="">预告</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <!-- 右边固定侧边栏 -->
+    <div class="nav-side">
+        <div class="nav-side-wrap">
+            <div class="nav-side-main">
+                <ul>
+                    <!-- 帐号li -->
+                    <li class="side-account">
+                        <div class="side-account-head ">
+                            <span class="icon-side-account iconfont icon-denglu"></span>
+                            <p>账号</p>
+                        </div>
+                        <!-- 帐号弹窗 -->
+                        <div class="side-account-content">
+                            <div class="side-account-content-login">
+                                <span class="account-close "></span>
+                                <a class="img-login" href=""><img src="img/my_cnt_pic.jpg" width="66px" alt=""></a>
+                                <p class="side-account-content-login-text">你好！请 <a href="">登录</a> | <a href="">注册</a></p>
+                            </div>
+                            <div class="side-account-content-order">
+                                <div class="account-content-order-myorder">
+                                    <a href="">
+                                        <span class="side-myorder"></span>
+                                        我的订单
+                                    </a>
+                                </div>
+                                <div class="account-content-order-mymessage">
+                                    <a href="">
+                                        <span class="side-myorder mymessage"></span>
+                                        我的消息
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="side-account-content-vip">
+                                <a href="">会员俱乐部</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 购物袋li -->
+                    <li class="side-bag">
+                        <div class="side-bag-head">
+                            <span class="icon-side-bag iconfont icon-bag"></span>
+                            <i class="side-bag-arrow"></i>
+                            <p class="side-bag-head-name">购物袋</p>
+                            <i class="side-bag-head-count">0</i>
+                        </div>
+                        <!-- 购物袋弹窗 -->
+                        <div class="side-common-content">
+                            <div class="side-account-content-login common-login">
+                                <span class="account-close commom-content-close"></span>
+                                <a class="img-login" href=""><img src="img/my_cnt_pic.jpg" width="66px" alt=""></a>
+                                <p class="side-account-content-login-text">你好！请 <a href="">登录</a> | <a href="">注册</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 优惠卷li -->
+                    <li class="side-coupon">
+                        <div class="side-head-common">
+                            <span class="icon-side-common iconfont icon-wodeyouhuijuan"></span>
+                            <div class="side-head-hover">
+                                <p class="side-head-hover-text">我的优惠卷</p>
+                            </div>
+                        </div>
+                        <!-- 优惠卷弹窗 -->
+                        <div class="side-common-content">
+                            <div class="side-account-content-login common-login">
+                                <span class="account-close commom-content-close"></span>
+                                <a class="img-login" href=""><img src="img/my_cnt_pic.jpg" width="66px" alt=""></a>
+                                <p class="side-account-content-login-text">你好！请 <a href="">登录</a> | <a href="">注册</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 品牌收藏li -->
+                    <li class="side-coupon">
+                        <div class="side-head-common">
+                            <span class="icon-side-common iconfont icon-like-alt"></span>
+                            <div class="side-head-hover">
+                                <p class="side-head-hover-text">品牌收藏</p>
+                            </div>
+                        </div>
+                        <!-- 品牌收藏弹窗 -->
+                        <div class="side-common-content">
+                            <div class="side-account-content-login common-login">
+                                <span class="account-close commom-content-close"></span>
+                                <a class="img-login" href=""><img src="img/my_cnt_pic.jpg" width="66px" alt=""></a>
+                                <p class="side-account-content-login-text">你好！请 <a href="">登录</a> | <a href="">注册</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 商品收藏li -->
+                    <li class="side-coupon">
+                        <div class="side-head-common">
+                            <span class="icon-side-common iconfont icon-shoucang"></span>
+                            <div class="side-head-hover">
+                                <p class="side-head-hover-text">商品收藏</p>
+                            </div>
+                        </div>
+                        <!-- 商品收藏弹窗 -->
+                        <div class="side-common-content">
+                            <div class="side-account-content-login common-login">
+                                <span class="account-close commom-content-close"></span>
+                                <a class="img-login" href=""><img src="img/my_cnt_pic.jpg" width="66px" alt=""></a>
+                                <p class="side-account-content-login-text">你好！请 <a href="">登录</a> | <a href="">注册</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 我的足迹li -->
+                    <li class="side-coupon">
+                        <div class="side-head-common">
+                            <span class="icon-side-common iconfont icon-lishi"></span>
+                            <div class="side-head-hover">
+                                <p class="side-head-hover-text">我的足迹</p>
+                            </div>
+                        </div>
+                        <!-- 我的足迹弹窗 -->
+                        <div class="side-common-content">
+                            <div class="side-account-content-login common-login">
+                                <span class="account-close commom-content-close"></span>
+                                <a class="img-login" href=""><img src="img/my_cnt_pic.jpg" width="66px" alt=""></a>
+                                <p class="side-account-content-login-text">你好！请 <a href="">登录</a> | <a href="">注册</a></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+            <!-- 底部两个按钮 -->
+            <div class="nav-side-bottom">
+                    <div class="side-feedback">
+                        <a href=""><span class="icon-side-common iconfont icon-piaoliusanicon-bi-"></span></a>
+                        <div class="side-head-hover">
+                                <p class="side-head-hover-text">会员反馈</p>
+                        </div>
+                    </div>
+                    <div class="side-backtop">
+                        <span class="icon-side-common iconfont icon-arrow_u"></span>
+                        <div class="side-head-hover back_top">
+                                <p class="side-head-hover-text">返回顶部</p>
+                        </div>
+                    </div>
+            </div>
+        </div>    
+    </div>
+    <div class="side-bag-inner side-bag-head">
+        <span class="icon-side-bag iconfont icon-bag"></span>
+        <p class="side-bag-head-name">购物袋</p>
+        <i class="side-bag-head-count">0</i>
+    </div>
+    <div class="side-backtop-inner side-backtop">
+        <span class="icon-side-common iconfont icon-arrow_u"></span>
+    </div>
+
+    <!-- 筛选栏 -->
+    <div class="filter-wrap">
+    	<div class="filter-result">
+    		<ul>
+    			<li class="all-search-result">
+    				<a class="" href="##">全部结果</a><span class="filter-result-arrow" class="">></span>
+    			</li>
+    			<li class="search-key">
+    				<span class="curr-search-key">连衣裙</span>
+    			</li>
+    		</ul>
+    	</div>
+        <div class="filter-box">
+            <!-- 品牌选项 -->
+            <div class="filter-section filter-brand">
+                <h3 class="filter-section-title">品牌：</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary01.png" alt="">
+                                    <div class="list-img-hover-txt">尚静</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary02.png" alt="">
+                                    <div class="list-img-hover-txt">DONEED</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary03.png" alt="">
+                                    <div class="list-img-hover-txt">千百·怡恋</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary04.png" alt="">
+                                    <div class="list-img-hover-txt">德玛纳</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary05.png" alt="">
+                                    <div class="list-img-hover-txt">麦子熟了</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary06.png" alt="">
+                                    <div class="list-img-hover-txt">HELLO KITTY</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary07.png" alt="">
+                                    <div class="list-img-hover-txt">卡柏迪</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary08.png" alt="">
+                                    <div class="list-img-hover-txt">慕詩</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary09.png" alt="">
+                                    <div class="list-img-hover-txt">蕾朵</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary10.png" alt="">
+                                    <div class="list-img-hover-txt">拉夏贝尔</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary11.png" alt="">
+                                    <div class="list-img-hover-txt">恒然</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary12.png" alt="">
+                                    <div class="list-img-hover-txt">cici-shop</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary13.png" alt="">
+                                    <div class="list-img-hover-txt">乐町</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary14.png" alt="">
+                                    <div class="list-img-hover-txt">NYSENSE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary15.png" alt="">
+                                    <div class="list-img-hover-txt">卡迪黛尔</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary16.png" alt="">
+                                    <div class="list-img-hover-txt">Mind Bridge</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary17.png" alt="">
+                                    <div class="list-img-hover-txt">鄂尔多斯</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary18.png" alt="">
+                                    <div class="list-img-hover-txt">未来之星</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary19.png" alt="">
+                                    <div class="list-img-hover-txt">ME&CITY KIDS</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary20.png" alt="">
+                                    <div class="list-img-hover-txt">A.T ATSURO TAYAMA</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary10.png" alt="">
+                                    <div class="list-img-hover-txt">拉夏贝尔</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary11.png" alt="">
+                                    <div class="list-img-hover-txt">恒然</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary12.png" alt="">
+                                    <div class="list-img-hover-txt">cici-shop</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary13.png" alt="">
+                                    <div class="list-img-hover-txt">乐町</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary14.png" alt="">
+                                    <div class="list-img-hover-txt">NYSENSE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary15.png" alt="">
+                                    <div class="list-img-hover-txt">卡迪黛尔</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary16.png" alt="">
+                                    <div class="list-img-hover-txt">Mind Bridge</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary17.png" alt="">
+                                    <div class="list-img-hover-txt">鄂尔多斯</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary18.png" alt="">
+                                    <div class="list-img-hover-txt">未来之星</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary19.png" alt="">
+                                    <div class="list-img-hover-txt">ME&CITY KIDS</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary20.png" alt="">
+                                    <div class="list-img-hover-txt">A.T ATSURO TAYAMA</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary01.png" alt="">
+                                    <div class="list-img-hover-txt">尚静</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary02.png" alt="">
+                                    <div class="list-img-hover-txt">DONEED</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary03.png" alt="">
+                                    <div class="list-img-hover-txt">千百·怡恋</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary04.png" alt="">
+                                    <div class="list-img-hover-txt">德玛纳</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary05.png" alt="">
+                                    <div class="list-img-hover-txt">麦子熟了</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary06.png" alt="">
+                                    <div class="list-img-hover-txt">HELLO KITTY</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary07.png" alt="">
+                                    <div class="list-img-hover-txt">卡柏迪</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary08.png" alt="">
+                                    <div class="list-img-hover-txt">慕詩</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary09.png" alt="">
+                                    <div class="list-img-hover-txt">蕾朵</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary10.png" alt="">
+                                    <div class="list-img-hover-txt">拉夏贝尔</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary11.png" alt="">
+                                    <div class="list-img-hover-txt">恒然</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary12.png" alt="">
+                                    <div class="list-img-hover-txt">cici-shop</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary13.png" alt="">
+                                    <div class="list-img-hover-txt">乐町</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary14.png" alt="">
+                                    <div class="list-img-hover-txt">NYSENSE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary15.png" alt="">
+                                    <div class="list-img-hover-txt">卡迪黛尔</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary16.png" alt="">
+                                    <div class="list-img-hover-txt">Mind Bridge</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary17.png" alt="">
+                                    <div class="list-img-hover-txt">鄂尔多斯</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary18.png" alt="">
+                                    <div class="list-img-hover-txt">未来之星</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary19.png" alt="">
+                                    <div class="list-img-hover-txt">ME&CITY KIDS</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary20.png" alt="">
+                                    <div class="list-img-hover-txt">A.T ATSURO TAYAMA</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary10.png" alt="">
+                                    <div class="list-img-hover-txt">拉夏贝尔</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary11.png" alt="">
+                                    <div class="list-img-hover-txt">恒然</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary12.png" alt="">
+                                    <div class="list-img-hover-txt">cici-shop</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary13.png" alt="">
+                                    <div class="list-img-hover-txt">乐町</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary14.png" alt="">
+                                    <div class="list-img-hover-txt">NYSENSE</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    <img src="img/search/primary15.png" alt="">
+                                    <div class="list-img-hover-txt">卡迪黛尔</div>
+                                </a>
+                            </li>
+                            <li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="extend-list">
+                        <span class="filter-button-txt">更多</span><span class="button-icon-extend iconfont icon-down"></span>
+                    </button>
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                	<button class="submit" disabled="disabled">确认</button>
+                	<button class="cannel">取消</button>
+                </div>
+            </div>
+            <!-- 分类选项 -->
+            <div class="filter-section filter-type">
+                <h3 class="filter-section-title">分类</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">女装</a></li>
+                            <li><a href="##">母婴</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-command" style="display: none;"></div>
+            </div>
+            <!-- 版型选项 -->
+            <div class="filter-section filter-shape">
+                <h3 class="filter-section-title">版型</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">宽松型</a></li>
+                            <li><a href="##">修身型</a></li>
+                            <li><a href="##">紧身</a></li>
+                            <li><a href="##">修身</a></li>
+                            <li><a href="##">常规</a></li>
+                            <li><a href="##">直筒</a></li>
+                            <li><a href="##">宽松</a></li>
+                            <li><a href="##">收腰</a></li>
+                            <li><a href="##">标准型</a></li>
+                            <li><a href="##">其他</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="extend-list">
+                        <span class="filter-button-txt">更多</span><span class="button-icon-extend iconfont icon-down"></span>
+                    </button>
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+            <!-- 裙型选项 -->
+            <div class="filter-section filter-skirt-type">
+                <h3 class="filter-section-title">裙型</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">蛋糕裙</a></li>
+                            <li><a href="##">铅笔裙</a></li>
+                            <li><a href="##">伞裙</a></li>
+                            <li><a href="##">仙女裙</a></li>
+                            <li><a href="##">运动裙</a></li>
+                            <li><a href="##">网球裙</a></li>
+                            <li><a href="##">鱼尾裙</a></li>
+                            <li><a href="##">蓬蓬裙</a></li>
+                            <li><a href="##">花苞裙</a></li>
+                            <li><a href="##">牛仔裙</a></li>
+                            <li><a href="##">背带裙</a></li>
+                            <li><a href="##">A字裙</a></li>
+                            <li><a href="##">拼接款</a></li>
+                            <li><a href="##">荷叶边</a></li>
+                            <li><a href="##">不对称</a></li>
+                            <li><a href="##">西装裙</a></li>
+                            <li><a href="##">直筒裙</a></li>
+                            <li><a href="##">缩褶裙</a></li>
+                            <li><a href="##">褶裥裙</a></li>
+                            <li><a href="##">圆台裙</a></li>
+                            <li><a href="##">波浪裙</a></li>
+                            <li><a href="##">多节裙</a></li>
+                            <li><a href="##">拖尾裙</a></li>
+                            <li><a href="##">齐地裙</a></li>
+                            <li><a href="##">修身裙</a></li>
+                            <li><a href="##">宽松裙</a></li>
+                            <li><a href="##">高腰节裙</a></li>
+                            <li><a href="##">中腰裙</a></li>
+                            <li><a href="##">低腰裙</a></li>
+                            <li><a href="##">泡泡裙</a></li>
+                            <li><a href="##">包臀裙</a></li>
+                            <li><a href="##">百褶裙</a></li>
+                            <li><a href="##">其他</a></li>
+                            <li><a href="##">荷叶裙</a></li>
+                            <li><a href="##">不规则裙</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="extend-list">
+                        <span class="filter-button-txt">更多</span><span class="button-icon-extend iconfont icon-down"></span>
+                    </button>
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+            <!-- 工艺选项 -->
+            <div class="filter-section filter-technology">
+                <h3 class="filter-section-title">工艺</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">漆皮</a></li>
+                            <li><a href="##">光面</a></li>
+                            <li><a href="##">压花</a></li>
+                            <li><a href="##">其他</a></li>
+                            <li><a href="##">软面</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+
+            <!-- 展开更多选项 -->
+            <!-- 裤长选项 -->
+            <div class="filter-section fliter-section-extend filter-kuchang">
+                <h3 class="filter-section-title">裤长</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">短裤</a></li>
+                            <li><a href="##">七分裤</a></li>
+                            <li><a href="##">九分裤</a></li>
+                            <li><a href="##">长裤</a></li>
+                            <li><a href="##">三角裤</a></li>
+                            <li><a href="##">五分裤</a></li>
+                            <li><a href="##">其他</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 流行元素选项 -->
+            <div class="filter-section fliter-section-extend filter-fashion">
+                <h3 class="filter-section-title">流行元素</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">编织</a></li>
+                            <li><a href="##">花边</a></li>
+                            <li><a href="##">镶钻</a></li>
+                            <li><a href="##">图腾</a></li>
+                            <li><a href="##">铆钉</a></li>
+                            <li><a href="##">车缝线</a></li>
+                            <li><a href="##">皮革拼接</a></li>
+                            <li><a href="##">绣花</a></li>
+                            <li><a href="##">亮片</a></li>
+                            <li><a href="##">镂空</a></li>
+                            <li><a href="##">水钻</a></li>
+                            <li><a href="##">流苏</a></li>
+                            <li><a href="##">翻边</a></li>
+                            <li><a href="##">涂鸦</a></li>
+                            <li><a href="##">蝴蝶结</a></li>
+                            <li><a href="##">串珠</a></li>
+                            <li><a href="##">蕾丝</a></li>
+                            <li><a href="##">褶皱</a></li>
+                            <li><a href="##">织花</a></li>
+                            <li><a href="##">印花</a></li>
+                            <li><a href="##">抽带</a></li>
+                            <li><a href="##">刺绣</a></li>
+                            <li><a href="##">钉珠</a></li>
+                            <li><a href="##">多口袋</a></li>
+                            <li><a href="##">钩花</a></li>
+                            <li><a href="##">荷叶边</a></li>
+                            <li><a href="##">徽章</a></li>
+                            <li><a href="##">肩章</a></li>
+                            <li><a href="##">口袋</a></li>
+                            <li><a href="##">拉链</a></li>
+                            <li><a href="##">明线</a></li>
+                            <li><a href="##">扭花</a></li>
+                            <li><a href="##">纽扣</a></li>
+                            <li><a href="##">拼接</a></li>
+                            <li><a href="##">破洞</a></li>
+                            <li><a href="##">水洗</a></li>
+                            <li><a href="##">贴布</a></li>
+                            <li><a href="##">贴图</a></li>
+                            <li><a href="##">镶边</a></li>
+                            <li><a href="##">腰带</a></li>
+                            <li><a href="##">撞色</a></li>
+                            <li><a href="##">做旧</a></li>
+                            <li><a href="##">收脚</a></li>
+                            <li><a href="##">毛边</a></li>
+                            <li><a href="##">卷边</a></li>
+                            <li><a href="##">抽绳装饰</a></li>
+                            <li><a href="##">链条</a></li>
+                            <li><a href="##">植绒</a></li>
+                            <li><a href="##">其他</a></li>
+                            <li><a href="##">丝带</a></li>
+                            <li><a href="##">金属装饰</a></li>
+                            <li><a href="##">爱心</a></li>
+                            <li><a href="##">星月</a></li>
+                            <li><a href="##">糖果色</a></li>
+                            <li><a href="##">素色</a></li>
+                            <li><a href="##">马卡龙色系</a></li>
+                            <li><a href="##">翅膀</a></li>
+                            <li><a href="##">立体装饰</a></li>
+                            <li><a href="##">磨破</a></li>
+                            <li><a href="##">拉链装饰</a></li>
+                            <li><a href="##">不对称</a></li>
+                            <li><a href="##">装饰物</a></li>
+                            <li><a href="##">露背</a></li>
+                            <li><a href="##">系带</a></li>
+                            <li><a href="##">开叉</a></li>
+                            <li><a href="##">透视</a></li>
+                            <li><a href="##">金属质感</a></li>
+                            <li><a href="##">混搭</a></li>
+                            <li><a href="##">提花</a></li>
+                            <li><a href="##">不规则</a></li>
+                            <li><a href="##">绑带</a></li>
+                            <li><a href="##">扎染</a></li>
+                            <li><a href="##">磨毛</a></li>
+                            <li><a href="##">丝光</a></li>
+                            <li><a href="##">假透肉</a></li>
+                            <li><a href="##">网纱</a></li>
+                            <li><a href="##">磨边</a></li>
+                            <li><a href="##">猫须</a></li>
+                            <li><a href="##">磨白</a></li>
+                            <li><a href="##">针织</a></li>
+                            <li><a href="##">吊染</a></li>
+                            <li><a href="##">泼墨</a></li>
+                            <li><a href="##">压皱</a></li>
+                            <li><a href="##">原色</a></li>
+                            <li><a href="##">刮烂</a></li>
+                            <li><a href="##">热转印</a></li>
+                            <li><a href="##">喷漆磨砂</a></li>
+                            <li><a href="##">印染</a></li>
+                            <li><a href="##">接缝全压胶</a></li>
+                            <li><a href="##">无缝对接</a></li>
+                            <li><a href="##">喷马骝</a></li>
+                            <li><a href="##">涂层</a></li>
+                            <li><a href="##">无工艺</a></li>
+                            <li><a href="##">密边</a></li>
+                            <li><a href="##">直下摆</a></li>
+                            <li><a href="##">伞形下摆</a></li>
+                            <li><a href="##">飘飘型下摆</a></li>
+                            <li><a href="##">内收型下摆</a></li>
+                            <li><a href="##">双明线</a></li>
+                            <li><a href="##">圆贴袋</a></li>
+                            <li><a href="##">有袋盖</a></li>
+                            <li><a href="##">方贴袋</a></li>
+                            <li><a href="##">暗口袋</a></li>
+                            <li><a href="##">斜插袋</a></li>
+                            <li><a href="##">隐形拉链袋</a></li>
+                            <li><a href="##">嵌线挖袋</a></li>
+                            <li><a href="##">茧型</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="extend-list">
+                        <span class="filter-button-txt">更多</span><span class="button-icon-extend iconfont icon-down"></span>
+                    </button>
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 衣长选项 -->
+            <div class="filter-section fliter-section-extend filter-yichang">
+                <h3 class="filter-section-title">衣长</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">其他</a></li>
+                            <li><a href="##">短</a></li>
+                            <li><a href="##">常规</a></li>
+                            <li><a href="##">长</a></li>
+                            <li><a href="##">中长</a></li>
+                            <li><a href="##">加长</a></li>
+                            <li><a href="##">连体</a></li>
+                            <li><a href="##">不对称衣长</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 风格选项 -->
+            <div class="filter-section fliter-section-extend filter-style">
+                <h3 class="filter-section-title">风格</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                             <li><a href="##">卡通</a></li>
+                             <li><a href="##">日韩</a></li>
+                             <li><a href="##">英伦</a></li>
+                             <li><a href="##">欧美</a></li>
+                             <li><a href="##">复古</a></li>
+                             <li><a href="##">海军风</a></li>
+                             <li><a href="##">金属朋克</a></li>
+                             <li><a href="##">波西米亚</a></li>
+                             <li><a href="##">嘻哈</a></li>
+                             <li><a href="##">休闲</a></li>
+                             <li><a href="##">时尚</a></li>
+                             <li><a href="##">潮流</a></li>
+                             <li><a href="##">优雅</a></li>
+                             <li><a href="##">商务</a></li>
+                             <li><a href="##">经典</a></li>
+                             <li><a href="##">甜美</a></li>
+                             <li><a href="##">淑女</a></li>
+                             <li><a href="##">民族风</a></li>
+                             <li><a href="##">百搭</a></li>
+                             <li><a href="##">原创设计</a></li>
+                             <li><a href="##">公主</a></li>
+                             <li><a href="##">韩风</a></li>
+                             <li><a href="##">日系</a></li>
+                             <li><a href="##">瑞丽</a></li>
+                             <li><a href="##">通勤</a></li>
+                             <li><a href="##">奢华</a></li>
+                             <li><a href="##">运动风</a></li>
+                             <li><a href="##">唯美风</a></li>
+                             <li><a href="##">学院风</a></li>
+                             <li><a href="##">中国古典风</a></li>
+                             <li><a href="##">欧美古典风</a></li>
+                             <li><a href="##">田园风</a></li>
+                             <li><a href="##">简约风</a></li>
+                             <li><a href="##">小清新</a></li>
+                             <li><a href="##">甜美风</a></li>
+                             <li><a href="##">复古风</a></li>
+                             <li><a href="##">公主系</a></li>
+                             <li><a href="##">淑女系</a></li>
+                             <li><a href="##">绅士系</a></li>
+                             <li><a href="##">萌系</a></li>
+                             <li><a href="##">日韩系</a></li>
+                             <li><a href="##">欧美系</a></li>
+                             <li><a href="##">英伦系</a></li>
+                             <li><a href="##">牛仔系</a></li>
+                             <li><a href="##">森系</a></li>
+                             <li><a href="##">奢华系</a></li>
+                             <li><a href="##">潮人系</a></li>
+                             <li><a href="##">青春活力</a></li>
+                             <li><a href="##">迷彩军旅</a></li>
+                             <li><a href="##">宫廷风</a></li>
+                             <li><a href="##">甜美可爱</a></li>
+                             <li><a href="##">运动休闲</a></li>
+                             <li><a href="##">原创风</a></li>
+                             <li><a href="##">帅气潮</a></li>
+                             <li><a href="##">森女系</a></li>
+                             <li><a href="##">民族异域风</a></li>
+                             <li><a href="##">性感妩媚</a></li>
+                             <li><a href="##">男友风</a></li>
+                             <li><a href="##">轻熟风</a></li>
+                             <li><a href="##">轻奢</a></li>
+                             <li><a href="##">休闲风</a></li>
+                             <li><a href="##">性冷谈风</a></li>
+                             <li><a href="##">慵懒风</a></li>
+                             <li><a href="##">情趣</a></li>
+                             <li><a href="##">街头风</a></li>
+                             <li><a href="##">文艺风</a></li>
+                             <li><a href="##">工装军旅</a></li>
+                             <li><a href="##">基础大众</a></li>
+                             <li><a href="##">其他</a></li>
+                         </ul> 
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="extend-list">
+                        <span class="filter-button-txt">更多</span><span class="button-icon-extend iconfont icon-down"></span>
+                    </button>
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+            
+            <!-- 适用季节选项 -->
+            <div class="filter-section fliter-section-extend filter-season">
+                <h3 class="filter-section-title">适用季节</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">春</a></li>
+                            <li><a href="##">夏</a></li>
+                            <li><a href="##">秋</a></li>
+                            <li><a href="##">冬</a></li>
+                            <li><a href="##">春秋</a></li>
+                            <li><a href="##">四季适用</a></li>
+                            <li><a href="##">秋冬</a></li>
+                            <li><a href="##">冬春</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 裙长选项 -->
+            <div class="filter-section fliter-section-extend filter-qunchang">
+                <h3 class="filter-section-title">裙长</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">长裙</a></li>
+                            <li><a href="##">中长裙</a></li>
+                            <li><a href="##">短裙</a></li>
+                            <li><a href="##">超短裙</a></li>
+                            <li><a href="##">前短后长</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 材质选项 -->
+            <div class="filter-section fliter-section-extend filter-material">
+                <h3 class="filter-section-title">材质</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">二层牛皮</a></li>
+                            <li><a href="##">头层牛皮</a></li>
+                            <li><a href="##">金属</a></li>
+                            <li><a href="##">PU</a></li>
+                            <li><a href="##">塑胶</a></li>
+                            <li><a href="##">毛呢</a></li>
+                            <li><a href="##">其他</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+
+            <!-- 填充物选项 -->
+            <div class="filter-section fliter-section-extend filter-filler">
+                <h3 class="filter-section-title">填充物</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">聚酯纤维</a></li>
+                            <li><a href="##">其他</a></li>
+                            <li><a href="##">无填充</a></li>
+                            <li><a href="##">棉</a></li>
+                            <li><a href="##">丝绵</a></li>
+                            <li><a href="##">白鸭绒</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 颜色选项 -->
+            <div class="filter-section fliter-section-extend filter-color">
+                <h3 class="filter-section-title">颜色</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">银色</a></li>
+                            <li><a href="##">青色</a></li>
+                            <li><a href="##">咖色</a></li>
+                            <li><a href="##">驼色</a></li>
+                            <li><a href="##">杏色</a></li>
+                            <li><a href="##">米色</a></li>
+                            <li><a href="##">裸色</a></li>
+                            <li><a href="##">褐色</a></li>
+                            <li><a href="##">花色</a></li>
+                            <li><a href="##">黄色</a></li>
+                            <li><a href="##">棕色</a></li>
+                            <li><a href="##">橙色</a></li>
+                            <li><a href="##">白色</a></li>
+                            <li><a href="##">绿色</a></li>
+                            <li><a href="##">粉色</a></li>
+                            <li><a href="##">紫色</a></li>
+                            <li><a href="##">蓝色</a></li>
+                            <li><a href="##">黑色</a></li>
+                            <li><a href="##">红色</a></li>
+                            <li><a href="##">灰色</a></li>
+                            <li><a href="##">金色</a></li>
+                            <li><a href="##">彩色</a></li>
+                            <li><a href="##">肤色</a></li>
+                            <li><a href="##">孔雀蓝</a></li>
+                            <li><a href="##">军绿</a></li>
+                            <li><a href="##">卡其</a></li>
+                            <li><a href="##">102</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="extend-list">
+                        <span class="filter-button-txt">更多</span><span class="button-icon-extend iconfont icon-down"></span>
+                    </button>
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 尺码选项 -->
+            <div class="filter-section fliter-section-extend filter-size">
+                <h3 class="filter-section-title">尺码</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">XXS</a></li>
+                            <li><a href="##">XS</a></li>
+                            <li><a href="##">S</a></li>
+                            <li><a href="##">M</a></li>
+                            <li><a href="##">L</a></li>
+                            <li><a href="##">XL</a></li>
+                            <li><a href="##">XXL</a></li>
+                            <li><a href="##">XXXL</a></li>
+                            <li><a href="##">XXXXL</a></li>
+                            <li><a href="##">XXXXXL</a></li>
+                            <li><a href="##">XXXXXXL</a></li>
+                            <li><a href="##">7XL</a></li>
+                            <li><a href="##">8XL</a></li>
+                            <li><a href="##">10XL</a></li>
+                            <li><a href="##">2</a></li>
+                            <li><a href="##">4</a></li>
+                            <li><a href="##">6</a></li>
+                            <li><a href="##">8</a></li>
+                            <li><a href="##">10</a></li>
+                            <li><a href="##">12</a></li>
+                            <li><a href="##">14</a></li>
+                            <li><a href="##">24</a></li>
+                            <li><a href="##">25</a></li>
+                            <li><a href="##">26</a></li>
+                            <li><a href="##">27</a></li>
+                            <li><a href="##">28</a></li>
+                            <li><a href="##">29</a></li>
+                            <li><a href="##">30</a></li>
+                            <li><a href="##">31</a></li>
+                            <li><a href="##">32</a></li>
+                            <li><a href="##">33</a></li>
+                            <li><a href="##">34</a></li>
+                            <li><a href="##">36</a></li>
+                            <li><a href="##">38</a></li>
+                            <li><a href="##">39</a></li>
+                            <li><a href="##">40</a></li>
+                            <li><a href="##">42</a></li>
+                            <li><a href="##">44</a></li>
+                            <li><a href="##">46</a></li>
+                            <li><a href="##">48</a></li>
+                            <li><a href="##">50</a></li>
+                            <li><a href="##">52</a></li>
+                            <li><a href="##">59</a></li>
+                            <li><a href="##">60</a></li>
+                            <li><a href="##">64</a></li>
+                            <li><a href="##">66</a></li>
+                            <li><a href="##">70</a></li>
+                            <li><a href="##">73</a></li>
+                            <li><a href="##">75</a></li>
+                            <li><a href="##">80</a></li>
+                            <li><a href="##">86</a></li>
+                            <li><a href="##">90</a></li>
+                            <li><a href="##">100</a></li>
+                            <li><a href="##">105</a></li>
+                            <li><a href="##">110</a></li>
+                            <li><a href="##">115</a></li>
+                            <li><a href="##">120</a></li>
+                            <li><a href="##">125</a></li>
+                            <li><a href="##">130</a></li>
+                            <li><a href="##">135</a></li>
+                            <li><a href="##">140</a></li>
+                            <li><a href="##">145</a></li>
+                            <li><a href="##">150</a></li>
+                            <li><a href="##">155</a></li>
+                            <li><a href="##">160</a></li>
+                            <li><a href="##">165</a></li>
+                            <li><a href="##">170</a></li>
+                            <li><a href="##">175</a></li>
+                            <li><a href="##">180</a></li>
+                            <li><a href="##">100S</a></li>
+                            <li><a href="##">110S</a></li>
+                            <li><a href="##">155S</a></li>
+                            <li><a href="##">均码</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="extend-list">
+                        <span class="filter-button-txt">更多</span><span class="button-icon-extend iconfont icon-down"></span>
+                    </button>
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 适用性别选项 -->
+            <div class="filter-section fliter-section-extend filter-sex">
+                <h3 class="filter-section-title">适用性别</h3>
+                <div class="filter-section-content">
+                    <div class="filter-section-list">
+                        <ul>
+                            <li><a href="##">女</a></li>
+                            <li><a href="##">女童</a></li>
+                            <li><a href="##">中性童</a></li>
+                            <li><a href="##">男童</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-operation">
+                    <button class="select-more">
+                        <span class="butto-icon-add iconfont icon-add"></span><span class="filter-button-txt">多选</span>
+                    </button>
+                </div>
+                <div class="filter-command">
+                    <button class="submit" disabled="disabled">确认</button>
+                    <button class="cannel">取消</button>
+                </div>
+            </div>
+
+            <!-- 更多选项按钮 -->
+            <div class="extend-filter-section">
+                <p>更多选项</p><span class="iconfont icon-down"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- 结果排序栏 -->
+    <div class="sort-nav">
+        <div class="sort-nav-left">
+            <div class="comprehensive-sort curr">
+                <span class="">综合</span>
+            </div>
+            <div class="price-sort" title="价格从低到高">
+                <span class="arrow-txt">价格<i class="icon-arrow-up iconfont icon-right"></i><i class="icon-arrow-up icon-arrow-down iconfont icon-down"></i></span>
+            </div>
+            <div class="discount-sort" title="折扣从低到高">
+                <span class="arrow-txt">折扣<i class="icon-arrow-up iconfont icon-right"></i><i class="icon-arrow-up icon-arrow-down iconfont icon-down"></i></span>
+            </div>
+            <div class="input-price">
+                <input type="text" placeholder="￥">
+                -
+                <input type="text" placeholder="￥">
+                <a class="input-price-btn"  href="##">确定</a>
+            </div>
+        </div>
+        <div class="sort-nav-right">
+            <div class="sort-nav-page"><span class="curr-page">1</span>/1670</div>
+            <a href="##" class="sort-nav-prevpage "><span class="iconfont icon-down1"></span></a>
+            <a href="" class="sort-nav-nextpage">下一页<span class="netx-page-arrow iconfont icon-rightArrow" ></span></a>
+        </div>
+    </div>
+
+
+    <!-- 搜索的结果 -->
+    <div class="search-result">
+        <div class="search-result-list">
+            <ul>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r01.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>296</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">德玛纳</span>2018夏季新品甜美可爱女装连衣裙春夏秋装百搭女连衣裙无袖雪纺小碎花无弹</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r02.jpg" alt="">
+                            <p class="discount-txt"><span></span>满1件打5折,封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>129</h3></span>
+                            <span class="prev-price">￥249</span>
+                            <span class="discount">5.2折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">coco+jameson</span>蕾丝吊带连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r03.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>358</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">德玛纳</span>2018年新品棉麻印花宽松大码连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r04.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>637</h3></span>
+                            <span class="prev-price">￥1180</span>
+                            <span class="discount">5.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">PRICH</span>衣恋旗下甜美淑女连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r05.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>296</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">德玛纳</span>2018夏季新品甜美可爱女装连衣裙春夏秋装百搭女连衣裙无袖雪纺小碎花无弹</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r06.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满498减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>296</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">芯羊</span>2018年新品棉麻印花宽松大码连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r07.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>249</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">芯羊</span>女士短袖连衣裙舒适休闲冰淇淋绣花简约连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r08.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>389</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">德玛纳</span>女士短袖连衣裙舒适休闲冰淇淋绣花简约连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r01.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>296</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">斯尔丽</span>瑟俪(斯尔丽高端)假两件式女款连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r02.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满498减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>296</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">芯羊</span>2018年新品棉麻印花宽松大码连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r04.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>249</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">芯羊</span>女士短袖连衣裙舒适休闲冰淇淋绣花简约连衣裙</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r08.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>389</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">德玛纳</span>女士短袖连衣裙舒适休闲冰淇淋绣花简约连衣裙</a>
+                    </div>
+                </li><li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r06.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满498减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>296</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">芯羊</span>2018年新品棉麻印花宽松大码连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r03.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满498减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>296</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">芯羊</span>2018年新品棉麻印花宽松大码连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r07.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>249</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">芯羊</span>女士短袖连衣裙舒适休闲冰淇淋绣花简约连衣裙</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="result-list-card">
+                        <a class="result-list-card-img" href="">
+                            <img src="img/search-r03.jpg" alt="">
+                            <p class="discount-txt"><span></span>跨品牌满199减100，上不封顶</p>
+                        </a>
+                        <div class="price-info">
+                            <span class="now-price">￥<h3>389</h3></span>
+                            <span class="prev-price">￥879</span>
+                            <span class="discount">3.4折</span>
+                        </div>
+                        <a href="##" class="goods-title"><span class="brand">德玛纳</span>女士短袖连衣裙舒适休闲冰淇淋绣花简约连衣裙</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 底部翻页 -->
+    <div class="button-page">
+        <span class="all-page">共1670页</span>
+        <a class="curr-page" href="##">1</a>
+        <a href="##">2</a>
+        <a href="##">3</a>
+        <span class="page-dot">...</span>
+        <a href="##">1670</a>
+        <a class="next-page iconfont icon-left" href="##"></a>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="vip-advance">
+                <ul class="vip-advance-list">
+                    <li><span class="vip-advance-01"><!-- 中国第三 --></span></li>
+                    <li><span class="vip-advance-02"><!-- 全球直采 --></span></li>
+                    <li><span class="vip-advance-03"><!-- 一手资源 --></span></li>
+                    <li><span class="vip-advance-04"><!-- 入仓全捡 --></span></li>
+                    <li><span class="vip-advance-05"><!-- 自营物流 --></span></li>
+                    <li><span class="vip-advance-06"><!-- 线下验真 --></span></li>
+                    <li><span class="vip-advance-07"><!-- 假货必赔 --></span></li>
+                    <li><span class="vip-advance-08"><!-- 任意退换 --></span></li>
+                    <li><span class="vip-advance-09"><!-- 千万信赖 --></span></li>
+                    <li><span class="vip-advance-10"><!-- 权威荣耀 --></span></li>
+                </ul>
+            </div>
+            <div class="footer-link-list">
+                <dl>
+                    <dt>服务保证</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">7天无理由放心退</a></dd>
+                    <dd><a href="">退货返运费</a></dd>
+                    <dd><a href="">7x15小时客户服务</a></dd>
+                    <dd><a href="">7天无理由随心换</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">导购演示</a></dd>
+                    <dd><a href="">订单操作</a></dd>
+                    <dd><a href="">会员注册</a></dd>
+                    <dd><a href="">账户管理</a></dd>
+                    <dd><a href="">收货样品</a></dd>
+                    <dd><a href="">会员等级</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="">快捷支付</a></dd>
+                    <dd><a href="">23家主流网银支付</a></dd>
+                    <dd><a href="">货到付款</a></dd>
+                    <dd><a href="">支付宝、银联等支付</a></dd>
+                    <dd><a href="">信用卡支付</a></dd>
+                    <dd><a href="">零钱支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="">全场满288元免运费</a></dd>
+                    <dd><a href="">配送范围及运费</a></dd>
+                    <dd><a href="">验货与签收</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="">退货政策</a></dd>
+                    <dd><a href="">退货流程</a></dd>
+                    <dd><a href="">退款方式和时效</a></dd>
+                    <dd><a href="">换货服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>唯品会APP二维码</dt>
+                    <img src="img/page_bottom_dl_n.png" width="100px" alt="">
+                    <dt>下载唯品会移动APP</dt>
+                </dl>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-nav-link">
+                    <a href="">关于我们</a> | 
+                    <a href="">About us</a> | 
+                    <a href="">Investor Relations</a> | 
+                    <a href="">媒体报道</a> | 
+                    <a href="">品牌招商</a> | 
+                    <a href="">隐私条款</a> | 
+                    <a href="">唯品诚聘</a> | 
+                    <a href="">365爱心基金</a> | 
+                    <a href="">唯品卡</a> | 
+                    <a href="">联系我们</a>
+                </p>
+            </div>
+            <div class="footer-info">
+                <p class="footer-info-txt">
+                    Copyright ? 2008-2018 vip.com，All Rights Reserved  使用本网站即表示接受唯品会用户协议。版权所有 <a href="">广州唯品会电子商务有限公司</a><br>
+                    <a href=""><img src="img/police_icon.png" alt="">粤公网安备 44010302111111号</a>  <a href="">粤ICP备08114786号</a> <a href="">增值业务经营许可证：粤B2-20170777</a> <a href="">网络文化经营许可证：粤网文〔2015〕1528-229</a><br>
+                    <a href="">自营主体经营证照</a>  <a href="">风险监测信息</a>  <a href="">互联网药品交易服务资格证（粤C20140002）</a>
+                </p>
+            </div>
+            <div class="footer-img">
+                <a href=""><span class="footer-img01"></span></a>
+                <a href=""><span class="footer-img02"></span></a>
+                <a href=""><span class="footer-img03"></span></a>
+                <a href=""><span class="footer-img04"></span></a>
+                <a href=""><span class="footer-img05"></span></a>
+                <a href=""><span class="footer-img06"></span></a>
+                <a href=""><span class="footer-img07"></span></a>
+            </div>
+        </div>
+    </footer>
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
